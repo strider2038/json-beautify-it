@@ -151,10 +151,20 @@ gulp.task('browser-ext-chrome-lib', function() {
         .pipe(gulp.dest(DESTINATION + 'browser-ext/chrome/'));
 });
 
+gulp.task('browser-ext-firefox-lib', function() {
+    return prerelease(gulp.src(TEMP + 'json-beautify-it.min.js')
+        .pipe(plugins.modify({ fileModifier: function(file, contents) {
+            return '(' + contents.replace('JSONBeautifyIt', '') + ')(\'pre\');';
+        }})))
+        .pipe(plugins.rename('json-beautify-run.min.js'))
+        .pipe(gulp.dest(DESTINATION + 'browser-ext/firefox/'));
+});
+
 gulp.task('compile-browser-ext', plugins.sequence(
     'browser-ext-copy-files',
     'browser-ext-manifest',
-    'browser-ext-chrome-lib'
+    'browser-ext-chrome-lib',
+    'browser-ext-firefox-lib'
 ));
 
 /**
@@ -171,7 +181,7 @@ gulp.task('doc', function() {
     return gulp.src([
             SOURCE + 'docs/intro.md',
             TEMP + 'function.md',
-            SOURCE + 'docs/browser-ext-chrome.md',
+            SOURCE + 'docs/browser-extensions.md',
             SOURCE + 'docs/known-issues.md'
         ])
         .pipe(plugins.concat('README.md'))

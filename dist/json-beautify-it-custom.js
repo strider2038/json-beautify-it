@@ -7,7 +7,7 @@
  * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
  *
  * Version 1.0.0
- * Publish date 2017-02-24T18:49:34.603Z
+ * Publish date 2017-02-24T20:11:26.042Z
  */
 /**
  * Function for parsing and beautifying JSON data. To use it just pass selector
