@@ -3,7 +3,7 @@
 const SOURCE = './src/';
 const DESTINATION = './dist/';
 const TEMP = './tmp/';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const RELEASE_DATE = (new Date()).toISOString();
 
 var gulp = require('gulp');

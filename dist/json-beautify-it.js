@@ -6,8 +6,8 @@
  * Released under the MIT license
  * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
  *
- * Version 1.0.0
- * Publish date 2017-02-24T20:11:26.042Z
+ * Version 1.0.1
+ * Publish date 2017-02-24T22:19:18.144Z
  */
 /**
  * Function for parsing and beautifying JSON data. To use it just pass selector
@@ -31,7 +31,7 @@
  * ![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
  * 
  * @author Igor Lazarev <strider2038@rambler.ru>
- * @version 1.0.0
+ * @version 1.0.1
  * @param {String} selector Selector for DOM container(s) with source JSON data
  * @param {Object} [config] Configuration array
  * @param {Number} [config.indent=4] Left indent space length
