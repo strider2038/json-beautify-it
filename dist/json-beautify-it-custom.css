@@ -1,0 +1,59 @@
+/**
+ * JSON Beautify It
+ * Function for beautifying JSON data, AJAX or API responses in browser
+ *
+ * Copyright (c) 2017 Igor Lazarev <strider2038@rambler.ru>
+ * Released under the MIT license
+ * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
+ *
+ * Version 1.0.0
+ * Publish date 2017-02-24T18:36:36.850Z
+ */
+.jbi-container {
+    font-family: monospace;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.jbi-error {
+    color: red;
+}
+.jbi-toggle {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px steelblue solid;
+    border-radius: 4px;
+    width: 11px;
+    height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 8px;
+}
+.jbi-toggle:after {
+    content: '-';
+    color: steelblue;
+}
+.jbi-toggle.jbi-toggle_active:after {
+    content: '+';
+}
+.jbi-type-key {
+    font-weight: bold;
+    color: black;
+}
+.jbi-type-string {
+    color: firebrick;
+}
+.jbi-type-number {
+    color: mediumblue;
+}
+.jbi-type-boolean {
+    color: mediumblue;
+}
+.jbi-type-null {
+    color: darkgray;
+}
+.jbi-type-uri {
+    display: inline;
+    color: firebrick;
+    font-family: monospace;
+}

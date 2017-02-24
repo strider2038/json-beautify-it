@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "JSON Beautify It",
+    "description": "Tool for beautifying JSON data, AJAX or API responses in browser",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Beautify JSON data on this page"
+    },
+    "background": {
+        "scripts": ["main.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}

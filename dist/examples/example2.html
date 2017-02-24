@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSONBeauitfyIt example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../json-beautify-it.js"></script>
+    </head>
+    <body>
+        <div class="json">{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "Москва",
+                    "short_name": "Москва",
+                    "types": ["locality", "political"]
+                },
+                {
+                    "long_name": "город Москва",
+                    "short_name": "г. Москва",
+                    "types": ["administrative_area_level_2", "political"]
+                },
+                {
+                    "long_name": "Россия",
+                    "short_name": "RU",
+                    "types": ["country", "political"]
+                }
+            ],
+            "formatted_address": "Москва, Россия",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 56.009657,
+                        "lng": 37.9456611
+                    },
+                    "southwest": {
+                        "lat": 55.48992699999999,
+                        "lng": 37.3193288
+                    }
+                },
+                "location": {
+                    "lat": 55.755826,
+                    "lng": 37.6173
+                },
+                "location_type": "APPROXIMATE",
+                "viewport": {
+                    "northeast": {
+                        "lat": 56.009657,
+                        "lng": 37.9456611
+                    },
+                    "southwest": {
+                        "lat": 55.48992699999999,
+                        "lng": 37.3193289
+                    }
+                }
+            },
+            "place_id": "ChIJybDUc_xKtUYRTM9XV8zWRD0",
+            "types": ["locality", "political"]
+        }
+    ],
+    "status": "OK"
+}</div>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                JSONBeautifyIt('.json');
+            });
+        </script>
+    </body>
+</html>

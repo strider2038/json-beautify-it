@@ -1,0 +1,24 @@
+{
+  "name": "json-beautify-it",
+  "version": "1.0.0",
+  "authors": [
+    "Igor Lazarev <strider2038@rambler.ru>"
+  ],
+  "description": "Tools for beautifying JSON data in browser",
+  "main": "dist/json-beautify-it.js",
+  "license": "MIT",
+  "homepage": "https://github.com/strider2038/json-beautify-it",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "qunit": "^2.1.1"
+  }
+}

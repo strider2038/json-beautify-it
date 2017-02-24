@@ -1,0 +1,2 @@
+@author Igor Lazarev <strider2038@rambler.ru>
+ * @version {version}

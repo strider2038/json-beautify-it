@@ -1,0 +1,44 @@
+{
+  "name": "json-beautify-it",
+  "version": "1.0.0",
+  "description": "Tools for beautifying JSON data in browser",
+  "main": "dist/json-beautify-it.js",
+  "scripts": {
+    "test": "echo \"To run tests please open /tests/json-beautify-it.html\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strider2038/json-beautify-it"
+  },
+  "keywords": [
+    "util",
+    "developer",
+    "developing",
+    "tool",
+    "browser",
+    "json",
+    "parser",
+    "beautifier"
+  ],
+  "author": "Igor Lazarev <strider2038@rambler.ru>",
+  "license": "MIT",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "del": "^2.2.2",
+    "eslint": "^3.16.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-eslint": "^3.0.1",
+    "gulp-file-insert": "^1.0.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-modify": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.1",
+    "jsdoc-to-markdown": "^3.0.0"
+  }
+}

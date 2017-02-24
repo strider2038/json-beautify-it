@@ -1,0 +1,4 @@
+callback({
+    "jsonp": true,
+    "params": [1, 2, 3]
+})

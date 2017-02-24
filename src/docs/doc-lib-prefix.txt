@@ -1,0 +1,11 @@
+/**
+ * JSON Beautify It
+ * Function for beautifying JSON data, AJAX or API responses in browser
+ *
+ * Copyright (c) 2017 Igor Lazarev <strider2038@rambler.ru>
+ * Released under the MIT license
+ * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
+ *
+ * Version {version}
+ * Publish date {build-date}
+ */
