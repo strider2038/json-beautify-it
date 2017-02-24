@@ -17,7 +17,7 @@
  * 
  * Will be displayed as
  * 
- * ![JSONBeautifyIt example](https://github.com/strider2038/json-beautify-it/docs/example1.jpg "Result of processing JSON data")
+ * ![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
  * 
  * {doc-extras}
  * @param {String} selector Selector for DOM container(s) with source JSON data

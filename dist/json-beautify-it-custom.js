@@ -7,7 +7,7 @@
  * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
  *
  * Version 1.0.0
- * Publish date 2017-02-24T18:36:36.850Z
+ * Publish date 2017-02-24T18:49:34.603Z
  */
 /**
  * Function for parsing and beautifying JSON data. To use it just pass selector
@@ -28,7 +28,7 @@
  * 
  * Will be displayed as
  * 
- * ![JSONBeautifyIt example](https://github.com/strider2038/json-beautify-it/docs/example1.jpg "Result of processing JSON data")
+ * ![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
  * 
  * @author Igor Lazarev <strider2038@rambler.ru>
  * @version 1.0.0

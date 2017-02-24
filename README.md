@@ -25,7 +25,7 @@ JSONBeautifyIt('.json');
 
 Will be displayed as
 
-![JSONBeautifyIt example](https://github.com/strider2038/json-beautify-it/docs/example1.jpg "Result of processing JSON data")
+![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
 
 
 
@@ -48,14 +48,14 @@ You have to manually install it in your browser (not available in Web Store righ
 All source codes are available [here](https://github.com/strider2038/json-beautify-it/dist/browser-ext/chrome).
 
 To use it open page with AJAX or API response and click on extension icon
-![JSONBeautifyIt icon](https://github.com/strider2038/json-beautify-it/dist/browser-ext/chrome/icon.png "JSONBeautifyIt chrome extension").
+![JSONBeautifyIt icon](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/dist/browser-ext/chrome/icon.png "JSONBeautifyIt chrome extension").
 After that extension will automatically launch script for beautifiyng JSON.
 
 For example, if you open this link
 <https://maps.google.com/maps/api/geocode/json?address=Moscow>
 and click on extension's icon you will see something like this
 
-![JSONBeautifyIt extension example](https://github.com/strider2038/json-beautify-it/docs/example1.jpg "Result of processing JSON data in Chrome")
+![JSONBeautifyIt extension example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example2.jpg "Result of processing JSON data in Chrome")
 
 
 ## Known issues
