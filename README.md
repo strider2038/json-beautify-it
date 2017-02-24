@@ -50,7 +50,7 @@ All source codes are available here:
 * [Firefox](https://github.com/strider2038/json-beautify-it/dist/browser-ext/firefox)
 
 To use it open page with AJAX or API response and click on extension icon
-![JSONBeautifyIt icon](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/dist/browser-ext/chrome/icon.png "JSONBeautifyIt chrome extension").
+![JSONBeautifyIt icon](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/dist/browser-ext/chrome/icon16.png "JSONBeautifyIt chrome extension").
 After that extension will automatically launch script for beautifiyng JSON.
 
 For example, if you open this link
