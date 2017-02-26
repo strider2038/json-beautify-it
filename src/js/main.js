@@ -28,6 +28,7 @@
  * *container* (source container with JSON data) and *error* (boolean value)
  * @param {RegExp} [config.uriRegExp=/(https?:\/\/[^\s]+)/g] Regular expression for detecting uri links
  * @param {String} [config.stylesheetId="json-beautify-it-stylesheet"] Id for inlined stylesheet
+ * @param {Boolean} [config.encodeStrings=true] Enables/disables html encoding for strings
  * @returns {Boolean}
  */
 function JSONBeautifyIt(selector, config) {
@@ -169,7 +170,11 @@ function JSONBeautifyIt(selector, config) {
             if (node.match(config.uriRegExp)) {
                 return getTypeBlock(node, 'uri');
             }
-            return getTypeBlock(encode(JSON.stringify(node)), 'string');
+            html = JSON.stringify(node);
+            if (config.encodeStrings) {
+                html = encode(html);
+            }
+            return getTypeBlock(html, 'string');
         }
 
         if (node === true || node === false) {

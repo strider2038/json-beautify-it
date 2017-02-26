@@ -7,63 +7,9 @@
     <body>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function () {
-                JSONBeautifyIt('pre');
+                JSONBeautifyIt('pre', {encodeStrings: false});
             });
         </script>
-        <pre style="word-wrap: break-word; white-space: pre-wrap;">{
-   "results" : [
-      {
-         "address_components" : [
-            {
-               "long_name" : "Москва",
-               "short_name" : "Москва",
-               "types" : [ "locality", "political" ]
-            },
-            {
-               "long_name" : "город Москва",
-               "short_name" : "г. Москва",
-               "types" : [ "administrative_area_level_2", "political" ]
-            },
-            {
-               "long_name" : "Россия",
-               "short_name" : "RU",
-               "types" : [ "country", "political" ]
-            }
-         ],
-         "formatted_address" : "Москва, Россия",
-         "geometry" : {
-            "bounds" : {
-               "northeast" : {
-                  "lat" : 56.009657,
-                  "lng" : 37.9456611
-               },
-               "southwest" : {
-                  "lat" : 55.48992699999999,
-                  "lng" : 37.3193288
-               }
-            },
-            "location" : {
-               "lat" : 55.755826,
-               "lng" : 37.6173
-            },
-            "location_type" : "APPROXIMATE",
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 56.009657,
-                  "lng" : 37.9456611
-               },
-               "southwest" : {
-                  "lat" : 55.48992699999999,
-                  "lng" : 37.3193289
-               }
-            }
-         },
-         "place_id" : "ChIJybDUc_xKtUYRTM9XV8zWRD0",
-         "types" : [ "locality", "political" ]
-      }
-   ],
-   "status" : "OK"
-}
-        </pre>
+        <pre style="word-wrap: break-word; white-space: pre-wrap;">{"callback":"callback","data":{"obj":{"a":1,"b":2},"arr":[1,2,3],"null":null,"s":"&lt;b&gt;this&lt;/b&gt; is &lt;i&gt;awesome&lt;/i&gt; &lt;script&gt;alert(\"danger!\");&lt;/script&gt;","s2":"Кириллица &amp; и \\n перенос"}}</pre>
     </body>
 </html>

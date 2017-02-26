@@ -7,6 +7,7 @@
     config.callback = typeof config.callback === 'function' ? config.callback : null;
     config.uriRegExp = config.uriRegExp || /(https?:\/\/[^\s]+)/g;
     config.stylesheetId = config.stylesheetId || 'json-beautify-it-stylesheet';
+    config.encodeStrings = typeof config.encodeStrings === 'undefined' ? true : (config.encodeStrings ? true : false);
     
     config.classPrefix = config.classPrefix || 'jbi';
     config.classPrefix += '-';

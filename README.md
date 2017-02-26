@@ -39,6 +39,7 @@ Will be displayed as
 | [config.callback] | <code>function</code> |  | Callback function. If is defined all process results will be send via it. Callback parameters are: *html* (generated html code), *container* (source container with JSON data) and *error* (boolean value) |
 | [config.uriRegExp] | <code>RegExp</code> | <code>/(https?:\/\/[^\s]+)/g</code> | Regular expression for detecting uri links |
 | [config.stylesheetId] | <code>String</code> | <code>&quot;json-beautify-it-stylesheet&quot;</code> | Id for inlined stylesheet |
+| [config.encodeStrings] | <code>Boolean</code> | <code>true</code> | Enables/disables html encoding for strings |
 
 
 ## Browser extensions for Chrome and Firefox

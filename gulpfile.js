@@ -3,7 +3,7 @@
 const SOURCE = './src/';
 const DESTINATION = './dist/';
 const TEMP = './tmp/';
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 const RELEASE_DATE = (new Date()).toISOString();
 
 var gulp = require('gulp');
@@ -145,7 +145,7 @@ gulp.task('browser-ext-manifest', function() {
 gulp.task('browser-ext-chrome-lib', function() {
     return prerelease(gulp.src(TEMP + 'json-beautify-it.min.js')
         .pipe(plugins.modify({ fileModifier: function(file, contents) {
-            return '(' + contents.replace('JSONBeautifyIt', '') + ')(\'pre\');';
+            return '(' + contents.replace('JSONBeautifyIt', '') + ')(\'pre\', {encodeStrings: false});';
         }})))
         .pipe(plugins.rename('json-beautify-run.min.js'))
         .pipe(gulp.dest(DESTINATION + 'browser-ext/chrome/'));
@@ -154,7 +154,7 @@ gulp.task('browser-ext-chrome-lib', function() {
 gulp.task('browser-ext-firefox-lib', function() {
     return prerelease(gulp.src(TEMP + 'json-beautify-it.min.js')
         .pipe(plugins.modify({ fileModifier: function(file, contents) {
-            return '(' + contents.replace('JSONBeautifyIt', '') + ')(\'pre\');';
+            return '(' + contents.replace('JSONBeautifyIt', '') + ')(\'pre\', {encodeStrings: false});';
         }})))
         .pipe(plugins.rename('json-beautify-run.min.js'))
         .pipe(gulp.dest(DESTINATION + 'browser-ext/firefox/'));

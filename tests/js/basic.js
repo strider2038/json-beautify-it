@@ -3,6 +3,21 @@ QUnit.test("basic", function (assert) {
     var $buffer = document.querySelector(buffer);
     $buffer.innerHTML = '';
     
+    var encode = function(s) {
+        var regexEncode = /["&'<>`]/g;
+        var encodeMap = {
+            '"': '&quot;',
+            '&': '&amp;',
+            '\'': '&#x27;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '`': '&#x60;'
+        };
+        return s.replace(regexEncode, function(c) {
+            return encodeMap[c];
+        });
+    };
+    
     $buffer.innerHTML = 'true';
     JSONBeautifyIt(buffer);
     assert.equal($buffer.innerHTML, 
@@ -56,6 +71,12 @@ QUnit.test("basic", function (assert) {
     assert.equal($buffer.innerHTML, 
         '<pre class="jbi-container"><span class="jbi-type-string">"string with &lt;b&gt;html&lt;/b&gt; entities"</span></pre>', 
         'String with html entities');
+    
+    $buffer.innerHTML = encode('"string with <b>html</b> entities"');
+    JSONBeautifyIt(buffer, {encodeStrings: false});
+    assert.equal($buffer.innerHTML, 
+        '<pre class="jbi-container"><span class="jbi-type-string">"string with &lt;b&gt;html&lt;/b&gt; entities"</span></pre>', 
+        'Prevent double encoding for strings');
     
     $buffer.innerHTML = '[1, 3, "s"]';
     JSONBeautifyIt(buffer);

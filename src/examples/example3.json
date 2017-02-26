@@ -1,0 +1,1 @@
+{"callback":"callback","data":{"obj":{"a":1,"b":2},"arr":[1,2,3],"null":null,"s":"<b>this</b> is <i>awesome</i> <script>alert(\"danger!\");</script>","s2":"Кириллица & и \\n перенос"}}

@@ -6,8 +6,8 @@
  * Released under the MIT license
  * https://github.com/strider2038/json-beautify-it/blob/master/LICENSE
  *
- * Version 1.0.1
- * Publish date 2017-02-24T22:19:18.144Z
+ * Version 1.0.2
+ * Publish date 2017-02-26T09:31:43.088Z
  */
 /**
  * Function for parsing and beautifying JSON data. To use it just pass selector
@@ -31,7 +31,7 @@
  * ![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
  * 
  * @author Igor Lazarev <strider2038@rambler.ru>
- * @version 1.0.1
+ * @version 1.0.2
  * @param {String} selector Selector for DOM container(s) with source JSON data
  * @param {Object} [config] Configuration array
  * @param {Number} [config.indent=4] Left indent space length
@@ -40,6 +40,7 @@
  * *container* (source container with JSON data) and *error* (boolean value)
  * @param {RegExp} [config.uriRegExp=/(https?:\/\/[^\s]+)/g] Regular expression for detecting uri links
  * @param {String} [config.stylesheetId="json-beautify-it-stylesheet"] Id for inlined stylesheet
+ * @param {Boolean} [config.encodeStrings=true] Enables/disables html encoding for strings
  * @returns {Boolean}
  */
 function JSONBeautifyIt(selector, config) {
@@ -52,6 +53,7 @@ function JSONBeautifyIt(selector, config) {
     config.callback = typeof config.callback === 'function' ? config.callback : null;
     config.uriRegExp = config.uriRegExp || /(https?:\/\/[^\s]+)/g;
     config.stylesheetId = config.stylesheetId || 'json-beautify-it-stylesheet';
+    config.encodeStrings = typeof config.encodeStrings === 'undefined' ? true : (config.encodeStrings ? true : false);
 
     var classPrefix = 'jbi-';
     var typePrefix = 'jbi-type-';
@@ -232,7 +234,11 @@ function JSONBeautifyIt(selector, config) {
             if (node.match(config.uriRegExp)) {
                 return getTypeBlock(node, 'uri');
             }
-            return getTypeBlock(encode(JSON.stringify(node)), 'string');
+            html = JSON.stringify(node);
+            if (config.encodeStrings) {
+                html = encode(html);
+            }
+            return getTypeBlock(html, 'string');
         }
 
         if (node === true || node === false) {

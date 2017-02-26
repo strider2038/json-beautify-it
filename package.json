@@ -1,6 +1,6 @@
 {
   "name": "json-beautify-it",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tools for beautifying JSON data in browser",
   "main": "dist/json-beautify-it.js",
   "scripts": {
