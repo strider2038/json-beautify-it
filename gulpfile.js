@@ -182,7 +182,7 @@ gulp.task('doc', function() {
             SOURCE + 'docs/intro.md',
             TEMP + 'function.md',
             SOURCE + 'docs/browser-extensions.md',
-            SOURCE + 'docs/known-issues.md'
+            SOURCE + 'docs/outro.md'
         ])
         .pipe(plugins.concat('README.md'))
         .pipe(gulp.dest('./'));

@@ -1,33 +1,13 @@
 # JSON Beautifier
 
 Set of tools for parsing and beautifying JSON data in browser.
-* JavaScript function
-* Browser extensions for Chrome and Firefox
-
+* [JavaScript function](#jsonbeautifyitselector-config--boolean)
+* [Browser extensions for Chrome and Firefox](#browser-extensions-for-chrome-and-firefox)
+* [Yii2 Ajax debugger extension](#yii2-ajax-debugger-extension)
 <a name="JSONBeautifyIt"></a>
 
 ## JSONBeautifyIt(selector, [config]) ⇒ <code>Boolean</code>
-Function for parsing and beautifying JSON data. To use it just pass selector
-argument for searching containers with JSON. Function as default will replace
-text data with beautifully formatted HTML structure.
-
-*Example*
-
-Source html
-```
-<div class="json">{"s":"string","a":[1, 2, 3], "n": null}</div>
-```
-
-Function call
-```javascript
-JSONBeautifyIt('.json');
-```
-
-Will be displayed as
-
-![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
-
-
+Function for parsing and beautifying JSON data. To use it just pass selectorargument for searching containers with JSON. Function as default will replacetext data with beautifully formatted HTML structure.*Example*Source html```<div class="json">{"s":"string","a":[1, 2, 3], "n": null}</div>```Function call```javascriptJSONBeautifyIt('.json');```Will be displayed as![JSONBeautifyIt example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example1.jpg "Result of processing JSON data")
 
 **Kind**: global function  
 
@@ -47,8 +27,8 @@ Will be displayed as
 Chrome and Firefox extensions for beautifying JSON data in AJAX or API responses in browser.
 You have to manually install it in your browser (not available in web stores right now).
 All source codes are available here:
-* [Chrome](https://github.com/strider2038/json-beautify-it/dist/browser-ext/chrome)
-* [Firefox](https://github.com/strider2038/json-beautify-it/dist/browser-ext/firefox)
+* [Chrome](https://github.com/strider2038/json-beautify-it/tree/master/dist/browser-ext/chrome)
+* [Firefox](https://github.com/strider2038/json-beautify-it/tree/master/dist/browser-ext/firefox)
 
 To use it open page with AJAX or API response and click on extension icon
 ![JSONBeautifyIt icon](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/dist/browser-ext/chrome/icon16.png "JSONBeautifyIt chrome extension").
@@ -60,6 +40,11 @@ and click on extension's icon you will see something like this
 
 ![JSONBeautifyIt extension example](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/docs/example2.jpg "Result of processing JSON data in Chrome")
 
+
+## Yii2 Ajax debugger extension
+
+There is also debugger extension for Yii2 with automatic beautifying JSON response.
+You can see details [here](https://github.com/strider2038/yii2-ajax-debugger)
 
 ## Known issues
 

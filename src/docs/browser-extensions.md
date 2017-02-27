@@ -3,8 +3,8 @@
 Chrome and Firefox extensions for beautifying JSON data in AJAX or API responses in browser.
 You have to manually install it in your browser (not available in web stores right now).
 All source codes are available here:
-* [Chrome](https://github.com/strider2038/json-beautify-it/dist/browser-ext/chrome)
-* [Firefox](https://github.com/strider2038/json-beautify-it/dist/browser-ext/firefox)
+* [Chrome](https://github.com/strider2038/json-beautify-it/tree/master/dist/browser-ext/chrome)
+* [Firefox](https://github.com/strider2038/json-beautify-it/tree/master/dist/browser-ext/firefox)
 
 To use it open page with AJAX or API response and click on extension icon
 ![JSONBeautifyIt icon](https://raw.githubusercontent.com/strider2038/json-beautify-it/master/dist/browser-ext/chrome/icon16.png "JSONBeautifyIt chrome extension").
